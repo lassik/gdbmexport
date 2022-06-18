@@ -99,3 +99,19 @@ extern int gdbm_fdesc __P((GDBM_FILE));
 }
 #endif
 
+#include "gdbmerrno.h"
+
+/* extra prototypes */
+
+/* GDBM C++ support */
+#if defined(__cplusplus) || defined(c_plusplus)
+extern "C" {
+#endif
+
+extern char *gdbm_strerror __P((gdbm_error));
+
+#if defined(__cplusplus) || defined(c_plusplus)
+}
+#endif
+
+#endif
