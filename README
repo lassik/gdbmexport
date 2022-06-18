@@ -1,0 +1,22 @@
+gdbmexport-unofficial 1.14.1
+============================
+
+GNU dbm made changes to its database file format from version 1.8 to
+1.9 and dropped backward compatibility. For a short time, the gdbm
+package shipped with a gdbmexport tool to convert databases from the
+old format into a dump file format that new versions of gdbm can load.
+
+gdbmexport was always difficult to build: it was an optional feature
+disabled by default in the configure script, and depended on a
+_separate_ build of an old version of libgdbm being installed. What's
+worse, the tool was removed altogether starting with version 1.15.
+
+Performing the archaic autotools incantations required to reanimate
+this mess on current machines seems almost impossible. It turned out
+to be far easier to isolate the right source files by hand from the
+1.8.3 and 1.14.1 source releases.
+
+Here are the resuts so you don't have to jump through the same
+hoops. Use at your own risk. Compiling is just:
+
+    cc -Wall -o gdbmexport *.c
