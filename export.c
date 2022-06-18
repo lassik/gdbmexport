@@ -21,7 +21,7 @@
 
 #include "systems.h"
 
-#include <gdbm.h>
+#include "gdbm.h"
 
 /* Pull in gdbm_export() */
 #define GDBM_EXPORT_18
