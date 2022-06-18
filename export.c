@@ -25,7 +25,7 @@
 
 /* Pull in gdbm_export() */
 #define GDBM_EXPORT_18
-#include "gdbmexp.c"
+#include "gdbmexp.c.h"
 
 void
 usage (char *s)
@@ -71,7 +71,7 @@ main(int argc, char *argv[])
       case 'v':
 	version ();
 	exit (0);
-	
+
       default:
 	usage (argv[0]);
 	exit (1);
