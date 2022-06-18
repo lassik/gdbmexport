@@ -20,3 +20,8 @@ Here are the resuts so you don't have to jump through the same
 hoops. Use at your own risk. Compiling is just:
 
     cc -Wall -o gdbmexport *.c
+
+The original source archives I used were:
+
+    https://ftp.gnu.org/gnu/gdbm/gdbm-1.8.3.tar.gz
+    https://ftp.gnu.org/gnu/gdbm/gdbm-1.14.1.tar.gz
